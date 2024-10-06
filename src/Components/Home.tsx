@@ -1,6 +1,7 @@
 import React from 'react';
 import Person from './Person';
 import Nayok from './Nayok';
+import Fetchdata from './Fetchdata';
 
 const Home = () => {
     const person = {
@@ -27,12 +28,18 @@ const Home = () => {
             movies: ["Channai express", "janina"]
         },
     ]
+
+
     return (
         <div>
             <h2 className='text-3xl font-bold mt-4'>Props Type Validation</h2>
             {/* <Person name="Mehedi Hasan"></Person> */}
             <Person person={person}></Person>
             <Nayok nayoks={nayoks}></Nayok>
+            {/* <Fetchdata status="success"></Fetchdata> */}
+            {/* <Fetchdata status="error"></Fetchdata> */}
+            <Fetchdata status="error"></Fetchdata>
+            {/* <Fetchdata status="demo"></Fetchdata> throw error */}
         </div>
     );
 };
