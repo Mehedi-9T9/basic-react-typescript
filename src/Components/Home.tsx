@@ -2,6 +2,9 @@ import React from 'react';
 import Person from './Person';
 import Nayok from './Nayok';
 import Fetchdata from './Fetchdata';
+import Button from './Button';
+import Post from './Post';
+import Card from './Card';
 
 const Home = () => {
     const person = {
@@ -40,6 +43,10 @@ const Home = () => {
             {/* <Fetchdata status="error"></Fetchdata> */}
             <Fetchdata status="error"></Fetchdata>
             {/* <Fetchdata status="demo"></Fetchdata> throw error */}
+            <h2>Children Validation</h2>
+            <Button>Click Me</Button>
+            <Post></Post>
+
         </div>
     );
 };
