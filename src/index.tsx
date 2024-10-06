@@ -12,7 +12,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={Routes}></RouterProvider>
+    <div className='max-w-7xl mx-auto'>
+      <RouterProvider router={Routes}></RouterProvider>
+    </div>
     {/* <App /> */}
   </React.StrictMode>
 );

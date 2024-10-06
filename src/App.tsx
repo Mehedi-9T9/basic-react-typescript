@@ -2,11 +2,13 @@ import React from 'react';
 
 import './App.css';
 import { Outlet } from 'react-router-dom';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello React Typescript</h2>
+
+      <Navbar></Navbar>
       <Outlet></Outlet>
 
     </div>
