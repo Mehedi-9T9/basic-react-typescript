@@ -5,6 +5,7 @@ import Fetchdata from './Fetchdata';
 import Button from './Button';
 import Post from './Post';
 import Card from './Card';
+import ComonButton from './ComonButton';
 
 const Home = () => {
     const person = {
@@ -46,6 +47,11 @@ const Home = () => {
             <h2>Children Validation</h2>
             <Button>Click Me</Button>
             <Post></Post>
+
+            <h2 className='text-3xl'>Style Props Validation</h2>
+            <ComonButton stl={{ color: "white", background: "red", padding: "10px 20px", borderRadius: "8px" }}>Red Button</ComonButton>
+            <ComonButton stl={{ color: "white", background: "blue", padding: "10px 20px", borderRadius: "8px" }}>Blue Button</ComonButton>
+            <ComonButton stl={{ color: "white", background: "green", padding: "10px 20px", borderRadius: "8px" }}>Green Button</ComonButton>
 
         </div>
     );
