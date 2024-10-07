@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Person from './Person';
 import Nayok from './Nayok';
 import Fetchdata from './Fetchdata';
@@ -6,6 +6,8 @@ import Button from './Button';
 import Post from './Post';
 import Card from './Card';
 import ComonButton from './ComonButton';
+import Counter from './Counter';
+import CreateUser from './CreateUser';
 
 const Home = () => {
     const person = {
@@ -52,6 +54,10 @@ const Home = () => {
             <ComonButton stl={{ color: "white", background: "red", padding: "10px 20px", borderRadius: "8px" }}>Red Button</ComonButton>
             <ComonButton stl={{ color: "white", background: "blue", padding: "10px 20px", borderRadius: "8px" }}>Blue Button</ComonButton>
             <ComonButton stl={{ color: "white", background: "green", padding: "10px 20px", borderRadius: "8px" }}>Green Button</ComonButton>
+
+            <h2 className="text-3xl">use State Hooks Validation</h2>
+            <Counter></Counter>
+            <CreateUser></CreateUser>
 
         </div>
     );
