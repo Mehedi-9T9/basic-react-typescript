@@ -8,6 +8,7 @@ import Card from './Card';
 import ComonButton from './ComonButton';
 import Counter from './Counter';
 import CreateUser from './CreateUser';
+import Login from './Login';
 
 const Home = () => {
     const person = {
@@ -58,6 +59,9 @@ const Home = () => {
             <h2 className="text-3xl">use State Hooks Validation</h2>
             <Counter></Counter>
             <CreateUser></CreateUser>
+
+            <h2 className='text-3xl'>Event Validation</h2>
+            <Login></Login>
 
         </div>
     );
